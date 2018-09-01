@@ -1,1 +1,1 @@
-# AA-Grafos
+Atividade acadêmica de grafos e algoritmos
