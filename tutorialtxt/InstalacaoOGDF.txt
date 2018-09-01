@@ -1,16 +1,21 @@
 */ Autor: Mayara Marques
 */ Data: 31-08-2018
+*/ Este tutorial foi feito com a versão ogdf-snapshot-2014-02-28 no Linux Mint 18 (também serve para ubuntu) 
+*/ Link para download do OGDF : http://amber-v7.cs.tu-dortmund.de/doku.php/tech:download
+*/ Documentação do OGDF: http://www.ogdf.net/doc-ogdf/
 
 1 - Descompacte a pasta "ogdf-snapshot-2014-02-28.zip"
 
 2 - Abra o terminal dentro da pasta
 
 3 - Abra no editor de texto o arquivo "makeMakefile.config" 
-e altere o "installPrefix" para receber o diretório em que 
-a pasta do ogdf-snapshot-2014-02-28 está.
+	e altere o "installPrefix" para receber o diretório em que 
+	a pasta do ogdf-snapshot-2014-02-28 está.
 	Ex: installPrefix = /usr/local --> installPrefix = /home/mmrosa/Documentos/OGDF-snapshot
 
-	Caso apareça no diretorio "Area de trabalho" tome cuidado pois costuma dar problema como espaco entre as palavras
+	Caso apareça no diretorio "Área de trabalho" tome cuidado pois costuma dar problema como espaço entre as palavras.
+	Área de trabalho no terminal deve ficar "Área\ de\ Trabalho/"
+
 4 - Retorne a pasta "ogdf-snapshot-2014-02-28" e execute makeMakefile.sh no terminal para que ele gere o Makefile. 
  	Para executar um .sh faça : ./makeMakefile.sh 
 	Aguarde a finalização.
@@ -18,9 +23,23 @@ a pasta do ogdf-snapshot-2014-02-28 está.
 5 - Digite "make" no terminal e dê enter. 
 	Aguarde a finalização. Demora um pouco esta parte. Então, faça um café e assista um vídeo no youtube!
 
-6 - Se deu tudo certo, você já pode executar um programa para teste.
+6 - Se deu tudo certo, você já pode compilar e executar um programa para teste.
 
-7 - 
+7 - Ache o programa de teste que está junto a pasta deste tutorial. "exemplo.cpp"
 
+8 - Como compilar?
 
-10 - We better togheter or not! Rsrsrs!
+	Você deve indicar no momento da compilação do seu código(arquivo.cpp), o diretório para duas pastas que estão na pasta do OGDF("ogdf-snapshot-2014-02-28"), as pastas são "include" e "_release"
+
+	Ex: 
+
+	g++ -I/home/mmrosa/Documentos/OGDF-snapshot/include -o2 exemplo.cpp -o exemplo -lOGDF -lCOIN -pthread -L/home/mmrosa Documentos/OGDF-snapshot/_release
+
+9 - Para executar:
+	
+	./exemplo 
+
+10 - Observe que na pasta onde o seu arquivo "exemplo.cpp" está, após a compilação e execução do arquivo exemplo.cpp
+	 aparecerá um arquivo de extensão "saida.sgv" que é o plot do grafo que foi especificado no código exemplo.cpp. 
+
+We better togheter or not! ;) 
