@@ -31,7 +31,7 @@ int main()
 
     forall_nodes( v, G )
     { 
-        GA.fillColor( v ) = Color( "#800080" ); // vértices do grafos receberão cor amarela
+        GA.fillColor( v ) = Color( "#800080" ); // vértices do grafos receberão cor roxo
 
         GA.height( v ) = 20.0; // setando a largura do vértice
         GA.width( v ) = 20.0; // setando a altura do vértice
