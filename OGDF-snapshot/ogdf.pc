@@ -1,0 +1,11 @@
+prefix=/home/mmrosa/Documentos/OGDF-snapshot
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: OGDF
+Description: Open Graph Drawing Framework
+URL: http://ogdf.net/
+Version: 2014.02
+Cflags: -I${includedir}
+Libs: -L${libdir} -lOGDF -lCOIN

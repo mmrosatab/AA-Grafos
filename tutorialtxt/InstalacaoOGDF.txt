@@ -1,0 +1,26 @@
+*/ Autor: Mayara Marques
+*/ Data: 31-08-2018
+
+1 - Descompacte a pasta "ogdf-snapshot-2014-02-28.zip"
+
+2 - Abra o terminal dentro da pasta
+
+3 - Abra no editor de texto o arquivo "makeMakefile.config" 
+e altere o "installPrefix" para receber o diretório em que 
+a pasta do ogdf-snapshot-2014-02-28 está.
+	Ex: installPrefix = /usr/local --> installPrefix = /home/mmrosa/Documentos/OGDF-snapshot
+
+	Caso apareça no diretorio "Area de trabalho" tome cuidado pois costuma dar problema como espaco entre as palavras
+4 - Retorne a pasta "ogdf-snapshot-2014-02-28" e execute makeMakefile.sh no terminal para que ele gere o Makefile. 
+ 	Para executar um .sh faça : ./makeMakefile.sh 
+	Aguarde a finalização.
+
+5 - Digite "make" no terminal e dê enter. 
+	Aguarde a finalização. Demora um pouco esta parte. Então, faça um café e assista um vídeo no youtube!
+
+6 - Se deu tudo certo, você já pode executar um programa para teste.
+
+7 - 
+
+
+10 - We better togheter or not! Rsrsrs!
