@@ -33,7 +33,7 @@
 
 	Ex: 
 
-	g++ -I/home/mmrosa/Documentos/OGDF-snapshot/include -o2 exemplo.cpp -o exemplo -lOGDF -lCOIN -pthread -L/home/mmrosa Documentos/OGDF-snapshot/_release
+	g++ -I/home/mmrosa/Documentos/OGDF-snapshot/include -o2 exemplo.cpp -o exemplo -lOGDF -lCOIN -pthread -L/home/mmrosa/Documentos/OGDF-snapshot/_release
 
 9 - Para executar:
 	
